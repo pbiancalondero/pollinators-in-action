@@ -118,7 +118,7 @@ html {
 .btn-secondary {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background-color: #304293;
+  background-color: #F5B700;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -131,7 +131,7 @@ html {
 
 .btn-primary:hover,
 .btn-secondary:hover {
-  background-color: #bbab1c;
+  background-color: #F5B700;
   color: white;
 }
 
