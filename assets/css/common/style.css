@@ -26,15 +26,22 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
+  color: #222222;
+}
+
+.under-title-line {
+  width: 6rem;
+  height: 0.25rem;
+  background-color: #F5B700;
+  margin-top: 0px;
   margin-bottom: 1.5rem;
-  color: #304293;
 }
 
 .btn-primary,
 .btn-secondary {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background-color: #0f085a;
+  background-color: #d1a00d;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -47,7 +54,7 @@ html {
 
 .btn-primary:hover,
 .btn-secondary:hover {
-  background-color: #2f287c;
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -150,62 +157,6 @@ html {
 .arena .section-title {
   color: white;
 }
-
-.contact {
-  min-height: 5vh;
-  padding: 2rem 0;
-  background-color: #f8f9fa;
-  display: flex;
-  align-items: center;
-}
-
-.contact-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-}
-
-
-.contact-image img {
-  max-width: 50%;
-  height: auto;
-}
-
-.contact-text {
-  flex: 0.5;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-text p {
-  margin: 1rem 0;
-  color: #666;
-  line-height: 1.6;
-}
-
-.contact-info {
-  margin-bottom: 1rem;
-
-}
-
-.contact-info p {
-  margin-bottom: 0.75rem;
-  display: flex;
-  align-items: center;
-  white-space: nowrap; 
-}
-
-.contact-info i {
-  margin-right: 0.75rem;
-  color: #0f085a;
-  font-size: 1.2rem;
-}
-
-.contact-info p i{
-  margin-right: 10px
-}
-
 
 :root {
   --color-bg1: rgb(255, 0, 0);
@@ -440,16 +391,65 @@ html {
 }
 
 .footer-social .social-icon {
-  color: #333;
+  color: #4CAF50;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
 .footer-social .social-icon:hover {
-  color: #0f085a;
+  color: #4CAF50;
 }
 
-#arena-subtitle,
-.section-subtitle {
+#arena-subtitle, .section-subtitle {
   color: #fff;
+}
+
+.call-to-action {
+  padding: 6rem 0;
+  margin-bottom: 0px;
+  background: #4CAF50;
+  background: radial-gradient(circle,rgba(76, 175, 80, 1) 0%, rgba(245, 183, 0, 1) 100%);
+}
+
+.call-to-action-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.call-to-action .section-title {
+  color: white;
+  margin-bottom: 1.3rem;
+}
+
+.call-to-action-text {
+  flex: 1;
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.call-to-action .btn-primary {
+  font-size: 1rem;
+}
+
+.call-to-action .cta-btn.light {
+  background-color: white;
+  color: #222;
+}
+
+.call-to-action .cta-btn.light:hover {
+  background-color: #222;
+  color: white;
+}
+
+.call-to-action .cta-btn.dark {
+  background-color: #222;
+  color: white;
+}
+
+.call-to-action .cta-btn.dark:hover {
+  background-color: white;
+  color: #222;
 }
