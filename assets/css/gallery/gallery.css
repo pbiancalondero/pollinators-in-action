@@ -26,10 +26,11 @@ html {
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  margin-top: 5rem;
   color: #304293;
 }
 
-.event-card {
+.gallery-card {
   background: white;
   border-radius: 10px;
   padding: 2rem;
@@ -38,33 +39,33 @@ html {
   height: 100%;
 }
 
-.event-card:hover {
+.event-gallery:hover {
   transform: translateY(-5px);
 }
 
-.event-title {
+.gallery-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   color: #304293;
   margin-bottom: 1rem;
 }
 
-.event-card ul li {
+.event-gallery ul li {
   position: relative;
   padding-left: 1.2rem;
   margin-bottom: 0.5rem;
   color: #666;
 }
 
-.event-card ul li::before {
+.gallery-card ul li::before {
   content: "•";
   position: absolute;
   left: 0;
   color: #304293;
 }
 
-.event-time,
-.event-location {
+.gallery-time,
+.gallery-location {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -316,4 +317,69 @@ html {
   .email-text {
     font-size: 0.8rem;
   }
+}
+
+.gallery {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .carousel {
+  width: 100%;
+  height: 500px;
+}
+
+.gallery .carousel-item {
+  width: 100%;
+}
+
+.gallery .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery .carousel-control-prev,
+.gallery .carousel-control-next {
+  width: 10%;
+  opacity: 0.8;
+}
+
+.gallery .carousel-control-prev:hover,
+.gallery .carousel-control-next:hover {
+  opacity: 1;
+}
+
+.intro-section .intro-title, .intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-card {
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.gallery-card .gallery-title {
+    color: white; 
+    margin: 0;
+}
+
+.col-md-3:nth-child(1) .gallery-card {
+    background-color: #F5B700; 
+}
+
+.col-md-3:nth-child(2) .gallery-card {
+    background-color: #4CAF50; 
+}
+
+.col-md-3:nth-child(3) .gallery-card {
+    background-color: #F5B700; 
 }
