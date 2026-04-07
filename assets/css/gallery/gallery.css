@@ -13,8 +13,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#legenda-dinamica {
+  color: #222;
+}
+
 .section-subtitle {
-  color: #304293;
+  color: #222;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   margin-bottom: 1rem;
