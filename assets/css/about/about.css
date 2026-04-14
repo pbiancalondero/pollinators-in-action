@@ -1,0 +1,66 @@
+.honeycomb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.hex-item {
+    position: relative;
+    width: 200px;
+    height: 220px;
+}
+
+.hex-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #f9a825;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: 0;
+}
+
+.hex-inner {
+    position: absolute;
+    inset: 4px;
+    background: #fff;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    text-align: center;
+    gap: 4px;
+}
+
+.hex-inner img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hex-inner h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hex-inner p {
+    font-size: 0.65rem;
+    margin: 0;
+    color: #555;
+}
+
+.hex-inner a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hex-inner a:hover h4 {
+    color: #f9a825;
+}
