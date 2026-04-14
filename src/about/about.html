@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/img/bee-icon-2.ico" type="image/x-icon" />
+    <title>Título</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/common/header.css">
+    <link rel="stylesheet" href="../../assets/css/about/about.css">
+    <link rel="stylesheet" href="../../assets/css/common/footer.css">
+    <link rel="stylesheet" href="../../assets/css/workshops/workshops.css">
+    <!-- <link rel="stylesheet" href="../../assets/css/common/style.css"> -->
+
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                ajustarNavbar();
+            });
+
+        function ajustarNavbar() {
+            let path = window.location.pathname;
+            let isHome = path.includes("/home/index.html") || path.endsWith("/home/");
+
+            let navLinks = document.querySelector(".navbar-nav");
+
+            if (!isHome) {
+                let homeLink = navLinks.querySelector("a[href='#home']");
+                if (homeLink) homeLink.setAttribute("href", "/src/home/index.html");
+
+                let linkLink = navLinks.querySelector("a[href='#link']");
+                if (linkLink) linkLink.setAttribute("href", "/src/link/link.html");
+            }
+        }
+    </script>
+    <main>
+        <section id="home" class="main gradient-bg">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                            result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+            <div class="gradients-container">
+                <div class="g1"></div>
+                <div class="g2"></div>
+                <div class="g3"></div>
+                <div class="g4"></div>
+                <div class="g5"></div>
+                <div class="interactive"></div>
+            </div>
+            <div class="container">
+                <div class="main-content">
+                    <h1>Sobre o <strong>Projeto Polinizadores em ação</strong></h1>
+                    <p>Desenvolvido na disciplina de <strong>Práticas Curriculares em Sociedade III</strong>
+                        (2025/2)<strong> e IV </strong>(2026/1).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-5 about-section">
+            <div class="container ex">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Descrição do Projeto</h2>
+                        <div class="event-card">
+                            <p class="mb-4">O projeto consite em um espaço físico de incentivo à biodiversidade, por
+                                meio de um
+                                jardim de flores de diferentes espécies e a instalação de colmeias de abelhas sem
+                                ferrão, o web site
+                                foi desenvolvido afim de registro de todas as etapas do projeto promovendo a
+                                conscientização dos membros
+                                da comunidade e instituição.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Objetivo do Projeto</h2>
+                        <div class="event-card">
+                            <p class="mb-4">O projeto consite em um espaço físico de incentivo à biodiversidade, por
+                                meio de um
+                                jardim de flores de diferentes espécies e a instalação de colmeias de abelhas sem
+                                ferrão, o web site
+                                foi desenvolvido afim de registro de todas as etapas do projeto promovendo a
+                                conscientização dos membros
+                                da comunidade e instituição.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="topicos" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Tecnologias utilizadas</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="event-card h-100">
+                            <i class="bi bi-cpu fs-2 text-primary mb-3"></i>
+                            <h3 class="event-title">Titulo</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">Lista</li>
+                                <li class="mb-2">Lista</li>
+                                <li class="mb-2">Lista</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="event-card">
+                            <div class="event-title">Datas importantes</div>
+
+                            <div class="event-date">
+                                <i class="bi bi-calendar-event"></i>
+                                <span><b>Data</b>
+                                    <br />1, 2 e 3</span>
+                            </div>
+
+                            <div class="event-date">
+                                <i class="bi bi-geo-alt"></i>
+                                <span><b>Local</b>
+                                    <br />Campus Passo Fundo - IFSul</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="time" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title">Alunas</h2>
+                <div class="honeycomb">
+                    <div class="hex-item">
+                        <div class="hex-inner">
+                            <img src="../../assets/img/about/barbara.png" alt="Bárbara">
+                            <a href="http://lattes.cnpq.br/4434851570904127" target="_blank"><h4>Bárbara Stella Wehrmann</h4></a>
+                            <p>Ocupacao</p>
+                            <p>barbarawehrmann.pf003@academico.ifsul.edu.br</p>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-inner">
+                            <img src="../../assets/img/about/helen.png" alt="Helen">
+                            <a href="http://lattes.cnpq.br/7941106852092853" target="_blank"><h4>Helen Zanco Neis</h4></a>
+                            <p>helenneis.pf031@academico.ifsul.edu.br</p>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-inner">
+                            <img src="../../assets/img/about/marjory.png" alt="Marjory">
+                            <a href="https://lattes.cnpq.br/8932392687931606" target="_blank"><h4>Marjory Ane Toazza</h4></a>
+                            <p>Ocupacao</p>
+                            <p>marjorytoazza.pf032@academico.ifsul.edu.br</p>
+                        </div>
+                    </div>
+                    <div class="hex-item">
+                        <div class="hex-inner">
+                            <img src="../../assets/img/about/paula.png" alt="Paula">
+                            <a href="http://lattes.cnpq.br/4934005530313206" target="_blank"><h4>Paula Bianca Londero</h4></a>
+                            <p>Ocupacao</p>
+                            <p>paulalondero.pf007@academico.ifsul.edu.br</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <h2 class="section-title">Professor</h2>
+                <div class="honeycomb">
+                    <div class="hex-item">
+                        <div class="hex-inner">
+                            <img src="../../assets/img/about/adilso.png" alt="Adilso">
+                            <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4718226D7" target="_blank"><h4>Adilso Souza Nunes</h4></a>
+                            <p>Mestre</p>
+                            <p>adilsosouza@ifsul.edu.br</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id=" footer-placeholder">
+        </div>
+        <script>
+            fetch('../footer/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+
+    </main>
+    <script src="../interactive-bubble.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
