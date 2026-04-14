@@ -64,3 +64,129 @@
 .hex-inner a:hover h4 {
     color: #f9a825;
 }
+
+
+body {
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.div-line {
+    width: 6rem;              
+    height: 0.25rem;         
+    background-color: #F5B700;
+    margin-left: auto;       
+    margin-right: auto;
+    margin-bottom: 1.5rem;   
+}
+
+.tutorial-section .section-title {
+  font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;   
+    color: black;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+.text-center {
+    text-align: center;
+    font-size: medium;
+    font-size: 18px;
+}
+
+.tutorial {
+  display: flex;
+  gap: 40px;
+  padding: 50px;
+  align-items: start;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tutorial-img {
+  flex-shrink: 0;
+}
+
+.tutorial-img img {
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 900px) {
+  .tutorial {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tutorial-content {
+    max-width: 100%;
+  }
+
+  .tutorial-img img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.tag {
+  color:#F5B700;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #F5B700;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4CAF50;
+}
+
+.icon-circle {
+    width: 48px;
+    height: 48px;
+    background-color: #F5B700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.tutorial-header {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 30px;
+}
