@@ -3,7 +3,12 @@ const dadosGaleria = {
     {
       src: "../../assets/img/25-09-27/trap-abelha.jpg",
       alt: "Instalação das iscas",
-      legenda: "Isca número 5 instalada e com abelhas.",
+      legenda: "Dia 27/09/25: Isca número 5 instalada e com abelhas.",
+    },
+    {
+      src: "../../assets/img/25-10-15/trap-abelha.png",
+      alt: "Instalação das iscas",
+      legenda: "Dia 15/10/25: Iscas número 5 e 7 instaladas e com abelhas.",
     },
   ],
 
@@ -93,6 +98,66 @@ const dadosGaleria = {
       src: "../../assets/img/25-09-30/pets-pintura-4.jpg",
       alt: "Montagem do jardim",
       legenda: "Garrafas PET pintadas e secando.",
+    },
+  ],
+
+  "dia-25-10-07": [
+    {
+      src: "../../assets/img/25-10-07/furacao-pets.png",
+      alt: "Montagem do jardim",
+      legenda:
+        "Colocação do arame de suporte nas garrafas PET do jardim vertical.",
+    },
+    {
+      src: "../../assets/img/25-10-07/pintura-pets-1.png",
+      alt: "Montagem do jardim",
+      legenda: "Pintura das garrafas PET do jardim vertical.",
+    },
+    {
+      src: "../../assets/img/25-10-07/pintura-pets-2.png",
+      alt: "Montagem do jardim",
+      legenda: "Pintura das garrafas PET do jardim vertical.",
+    },
+    {
+      src: "../../assets/img/25-10-07/pintura-pets-3.png",
+      alt: "Montagem do jardim",
+      legenda: "Pintura das garrafas PET do jardim vertical.",
+    },
+    {
+      src: "../../assets/img/25-10-07/traps-12-13.png",
+      alt: "Montagem do jardim",
+      legenda: "Confecção e instalação de duas novas iscas, 12 e 13.",
+    },
+  ],
+
+  "dia-25-10-18": [
+    {
+      src: "../../assets/img/25-10-18/caixa-inpa-1.png",
+      alt: "Montagem do jardim",
+      legenda: "Montagem de caixa Inpa para meliponário.",
+    },
+    {
+      src: "../../assets/img/25-10-18/caixa-inpa-2.png",
+      alt: "Montagem do jardim",
+      legenda: "Montagem de caixa Inpa para meliponário.",
+    },
+  ],
+
+  "dia-25-10-21": [
+    {
+      src: "../../assets/img/25-10-21/caixa-inpa-lixamento.png",
+      alt: "Montagem do jardim",
+      legenda: "Lixamento das caixas Inpa do meliponário.",
+    },
+    {
+      src: "../../assets/img/25-10-21/floreiras.png",
+      alt: "Montagem do jardim",
+      legenda: "Confecção das cestas de flores de litros.",
+    },
+    {
+      src: "../../assets/img/25-10-21/jardim-vertical.png",
+      alt: "Montagem do jardim",
+      legenda: "Montagem do jardim vertical (primeiro protótipo).",
     },
   ],
 };
