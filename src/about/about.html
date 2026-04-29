@@ -44,31 +44,56 @@
         }
     </script>
     <main>
-        <section id="home" class="main gradient-bg">
-            <svg xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                            result="goo" />
-                        <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
-                </defs>
-            </svg>
-            <div class="gradients-container">
-                <div class="g1"></div>
-                <div class="g2"></div>
-                <div class="g3"></div>
-                <div class="g4"></div>
-                <div class="g5"></div>
-                <div class="interactive"></div>
-            </div>
-            <div class="container">
-                <div class="main-content">
-                    <h1>Sobre o <strong>Projeto Polinizadores em ação</strong></h1>
+
+
+        <section id="detalhes" class="tutorial-section py-5">
+            <h2 class="section-title">Sobre o Projeto </h2>
+            <div class="div-line"></div>
+            <p class="text-center">Conheça mais sobre as etapas, motivações e impacto do projeto.</p>
+
+            <!-- <h1>Sobre o </h1>
                     <p>Desenvolvido na disciplina de <strong>Práticas Curriculares em Sociedade III</strong>
                         (2025/2)<strong> e IV </strong>(2026/1).
                     </p>
+                     -->
+
+            <div class="tutorial">
+                <div class="tutorial-img">
+                    <img src="../../assets/img/about/img2.png" alt="Foto do projeto">
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-header">
+                        <div class="icon-circle">
+                            <img src="../../assets/img/icons/leaf.png" alt="ícone">
+                        </div>
+                        <span class="tag">Motivação</span>
+                    </div>
+                    <h2>Por que criamos este projeto?</h2>
+                    <p>Descreva aqui a motivação principal do projeto, o problema que ele busca resolver e o contexto em
+                        que surgiu.</p>
+                    <h3>Impacto esperado</h3>
+                    <p>Explique os resultados esperados, como a conscientização da comunidade, preservação de
+                        polinizadores e biodiversidade local.</p>
+                </div>
+            </div>
+
+            <div class="tutorial" style="flex-direction: row-reverse;">
+                <div class="tutorial-img">
+                    <img src="../../assets/img/about/img.png" alt="Jardim de flores">
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-header">
+                        <div class="icon-circle">
+                            <img src="../../assets/img/icons/bee.png" alt="ícone">
+                        </div>
+                        <span class="tag">Etapas</span>
+                    </div>
+                    <h2>Como o projeto foi desenvolvido?</h2>
+                    <p>Descreva as fases do projeto: planejamento, implantação do jardim, instalação das colmeias,
+                        registro e divulgação.</p>
+                    <h3>Próximos passos</h3>
+                    <p>Informe o que ainda está por vir no projeto, como novas espécies de flores, expansão das colmeias
+                        ou eventos educativos.</p>
                 </div>
             </div>
         </section>
@@ -105,45 +130,6 @@
             </div>
         </section>
 
-        <section id="topicos" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="section-title">Tecnologias utilizadas</h2>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="event-card h-100">
-                            <i class="bi bi-cpu fs-2 text-primary mb-3"></i>
-                            <h3 class="event-title">Titulo</h3>
-                            <ul class="list-unstyled">
-                                <li class="mb-2">Lista</li>
-                                <li class="mb-2">Lista</li>
-                                <li class="mb-2">Lista</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="event-card">
-                            <div class="event-title">Datas importantes</div>
-
-                            <div class="event-date">
-                                <i class="bi bi-calendar-event"></i>
-                                <span><b>Data</b>
-                                    <br />1, 2 e 3</span>
-                            </div>
-
-                            <div class="event-date">
-                                <i class="bi bi-geo-alt"></i>
-                                <span><b>Local</b>
-                                    <br />Campus Passo Fundo - IFSul</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-        </section>
-
         <section id="time" class="py-5 bg-light">
             <div class="container">
                 <h2 class="section-title">Alunas</h2>
@@ -151,31 +137,36 @@
                     <div class="hex-item">
                         <div class="hex-inner">
                             <img src="../../assets/img/about/barbara.png" alt="Bárbara">
-                            <a href="http://lattes.cnpq.br/4434851570904127" target="_blank"><h4>Bárbara Stella Wehrmann</h4></a>
-                            <p>Ocupacao</p>
+                            <a href="http://lattes.cnpq.br/4434851570904127" target="_blank">
+                                <h4>Bárbara Stella Wehrmann</h4>
+                            </a>
                             <p>barbarawehrmann.pf003@academico.ifsul.edu.br</p>
                         </div>
                     </div>
                     <div class="hex-item">
                         <div class="hex-inner">
                             <img src="../../assets/img/about/helen.png" alt="Helen">
-                            <a href="http://lattes.cnpq.br/7941106852092853" target="_blank"><h4>Helen Zanco Neis</h4></a>
+                            <a href="http://lattes.cnpq.br/7941106852092853" target="_blank">
+                                <h4>Helen Zanco Neis</h4>
+                            </a>
                             <p>helenneis.pf031@academico.ifsul.edu.br</p>
                         </div>
                     </div>
                     <div class="hex-item">
                         <div class="hex-inner">
                             <img src="../../assets/img/about/marjory.png" alt="Marjory">
-                            <a href="https://lattes.cnpq.br/8932392687931606" target="_blank"><h4>Marjory Ane Toazza</h4></a>
-                            <p>Ocupacao</p>
+                            <a href="https://lattes.cnpq.br/8932392687931606" target="_blank">
+                                <h4>Marjory Ane Toazza</h4>
+                            </a>
                             <p>marjorytoazza.pf032@academico.ifsul.edu.br</p>
                         </div>
                     </div>
                     <div class="hex-item">
                         <div class="hex-inner">
                             <img src="../../assets/img/about/paula.png" alt="Paula">
-                            <a href="http://lattes.cnpq.br/4934005530313206" target="_blank"><h4>Paula Bianca Londero</h4></a>
-                            <p>Ocupacao</p>
+                            <a href="http://lattes.cnpq.br/4934005530313206" target="_blank">
+                                <h4>Paula Bianca Londero</h4>
+                            </a>
                             <p>paulalondero.pf007@academico.ifsul.edu.br</p>
                         </div>
                     </div>
@@ -187,7 +178,10 @@
                     <div class="hex-item">
                         <div class="hex-inner">
                             <img src="../../assets/img/about/adilso.png" alt="Adilso">
-                            <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4718226D7" target="_blank"><h4>Adilso Souza Nunes</h4></a>
+                            <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4718226D7"
+                                target="_blank">
+                                <h4>Adilso Souza Nunes</h4>
+                            </a>
                             <p>Mestre</p>
                             <p>adilsosouza@ifsul.edu.br</p>
                         </div>

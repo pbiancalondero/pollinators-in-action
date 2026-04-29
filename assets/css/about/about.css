@@ -6,10 +6,23 @@
     padding: 20px 0;
 }
 
+#time .container {
+    text-align: center;
+}
+
+#time .section-title {
+    text-align: center;
+}
+
 .hex-item {
     position: relative;
     width: 200px;
     height: 220px;
+    transition: transform 0.3s ease;
+}
+
+.hex-item:hover {
+    transform: scale(1.08);
 }
 
 .hex-item::before {
@@ -19,6 +32,7 @@
     background: #f9a825;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     z-index: 0;
+    transition: background 0.3s ease;
 }
 
 .hex-inner {
@@ -48,17 +62,21 @@
     font-weight: 700;
     margin: 0;
     line-height: 1.2;
+    text-align: center;
 }
 
 .hex-inner p {
     font-size: 0.65rem;
     margin: 0;
     color: #555;
+    text-align: center;
 }
 
 .hex-inner a {
     text-decoration: none;
     color: inherit;
+    display: flex;
+    justify-content: center;
 }
 
 .hex-inner a:hover h4 {
