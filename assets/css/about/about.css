@@ -197,3 +197,129 @@ button:hover {
     gap: 10px; 
     margin-bottom: 30px;
 }
+
+/* ── Team Section ── */
+.team-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-badge {
+    display: inline-block;
+    background: #F5B700;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 4px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.team-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.team-subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+.team-group-label {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #F5B700;
+    margin: 30px 0 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-grid-center {
+    justify-content: center;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    width: 255px;
+    text-align: center;
+    padding: 24px 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+
+.hex-photo {
+    position: relative;
+    width: 140px;
+    height: 158px;
+    margin: 0 auto 16px;
+}
+
+.hex-photo::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #F5B700;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: background 0.3s ease;
+}
+
+.team-card:hover .hex-photo::before {
+    background: #4CAF50;
+}
+
+.hex-photo img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.team-card-img-wrap h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+    line-height: 1.3;
+}
+
+.team-card-img-wrap p {
+    font-size: 0.6rem;
+    color: #666;
+    margin: 0;
+    word-break: break-word;
+}
+
+.team-card-img-wrap a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.team-card-img-wrap a:hover h4 {
+    color: #F5B700;
+}
