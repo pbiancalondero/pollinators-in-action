@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/img/bee-icon-2.ico" type="image/x-icon" />
+    <title>Tutorial de Meliponário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/common/header.css">
+    <link rel="stylesheet" href="../../assets/css/tutorials/meliponary.css">
+    <link rel="stylesheet" href="../../assets/css/common/footer.css">
+    <!-- <link rel="stylesheet" href="../../assets/css/common/style.css"> -->
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                ajustarNavbar();
+            });
+
+        function ajustarNavbar() {
+            let path = window.location.pathname;
+            let isHome = path.includes("/home/home.html") || path.endsWith("/home/");
+
+            let navLinks = document.querySelector(".navbar-nav");
+
+            if (!isHome) {
+                let homeLink = navLinks.querySelector("a[href='#home']");
+                if (homeLink) homeLink.setAttribute("href", "/src/home/home.html");
+            }
+        }
+    </script>
+    <main>
+        <section id="tutorial" class="py-5 tutorial-section">
+            <div class="container ex">
+                <h2 class="section-title">Tutorial de Meliponário</h2>
+                <div class="div-line"></div>
+                <div class="row">
+                    <div class="text-center">
+                        <p class="mb-4">Aprenda com nossos guias práticos e comece sua jornada na 
+                            criação de abelhas nativas sem ferrão. Descubra técnicas comprovadas 
+                            para captura, manejo e instalação de colônias.</p>
+                    </div>
+
+                    <div class="tutorial">
+                        <div class="tutorial-img">
+                            <img src="../../../assets/img/tutorials/bait.png">
+                        </div>
+                        <div class="tutorial-content">
+                            <div class="tutorial-header">
+                                <div class="icon-circle">
+                                    <img src="../../../assets/img/tutorials/droplet.svg" alt="Ícone flor">
+                                </div>
+                                <span class="tag">Iscas para Captura de Abelhas Sem Ferrão</span>
+                            </div>
+                            <h5><b>Passos:</b></h5>
+                            <ol class="stylized-list">
+                                <li>Misture a resina, a cera, o gel própolis e o álcool 90% armazenando em um recipiente,
+                                    chacoalhando bem e deixando descansar por 90 dias. Após isso, transfira a resina 
+                                    para garrafas PET de 2 ou 3 litros (que serão utilizadas como iscas), e enrole 
+                                    a garrafa em uma camada grossa de jornais(em torno de 5 jornais) prendendo com 
+                                    fita adesiva transparente.</li>
+                                <li>Coloque a garrafa enrolada com jornais dentro do saco preto e prenda com a 
+                                    presilha plástica, cortando as sobras do saco.</li>
+                                <li>Corte a garrafa PET de 500ml em torno de 5cm, encaixe no joelho de PVC e passe a 
+                                    mistura de resina, cera e gel própolis e álcool 90%.</li>
+                                <li>Encaixe a parte feito no passo 3 no bocal da garrafa PET de 2 ou 3 litros.</li>
+                                <li>Envolva a conexão feita no passo 4 com fita adesiva Silver Tape.</li>
+                                <li>Instale em uma árvore ou muro a mais ou menos 1,5m de altura, utilizando o arame.</li>
+                            </ol>
+                            <h5><b>Materiais Necessários:</b></h5>
+                            <ul class="green-list">
+                                <li>Resina e cera de abelha;</li>
+                                <li>Gel própolis;</li>
+                                <li>Álcool 90%;</li>
+                                <li>Garrafa PET de 2 ou 3 litros e de 500ml;</li>
+                                <li>Joelho de PVC 90°;</li>
+                                <li>Saco plástico preto de 22x45cm;</li>
+                                <li>Presilha plástica;</li>
+                                <li>Jornais;</li>
+                                <li>Fita adesiva Silver Tape e transparente;</li>
+                                <li>Arame.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tutorial">
+                        <div class="tutorial-content">
+                            <div class="tutorial-header">
+                                <div class="icon-circle">
+                                    <img src="../../../assets/img/tutorials/box.svg" alt="Ícone">
+                                </div>
+                                <span class="tag">Caixa Padrão INPA</span>
+                            </div>
+                            <h5><b>Passos:</b></h5>
+                            <ol class="stylized-list">
+                                <li>Tampa com 2cm de altura.</li>
+                                <li>Melgueira com 7cm de altura, 3cm de espesssura e 2 ripas.</li>
+                                <li>Sobre ninho com 7cm de altura, 3cm de espessura e 2 ripas.</li>
+                                <li>Ninho com 7cm de altura e 3cm de espessura.</li>
+                                <li>Fundo com 2,5cm de altura e 3cm de espessura.</li>
+                                <li>Ao final, a caixa deve ter as dimensões em torno de 34cm 
+                                    (comprimento) x 24cm (largura) x 24cm (altura).</li>
+                                <li>Transfira a colmeia da isca para a caixa.</li>
+                            </ol>
+                            <h5><b>Materiais Necessários:</b></h5>
+                            <ul class="green-list">
+                                <li>Madeira;</li>
+                                <li>Parafusos;</li>
+                                <li>Serra, furadeira e trena;</li>
+                                <li>Lixa para acabamento.</li>
+                            </ul>
+                        </div>
+                        <div class="tutorial-img">
+                            <img src="../../../assets/img/tutorials/box_tutorials.png">
+                        </div>
+                    </div>
+                    <div class="tutorial">
+                        <div class="tutorial-img">
+                            <img src="../../../assets/img/tutorials/flowers.png">
+                        </div>
+                        <div class="tutorial-content">
+                            <div class="tutorial-header">
+                                <div class="icon-circle">
+                                    <img src="../../../assets/img/tutorials/geo-alt.svg" alt="Ícone flor">
+                                </div>
+                                <span class="tag">Instalação das Caixas no Meliponário</span>
+                            </div>
+                            <h5><b>Passos:</b></h5>
+                             <ol class="stylized-list">
+                                <li>Escolha local com sombra parcial (evite sol direto nas horas mais quentes)</li>
+                                <li>Instale suportes a 1,5m do solo para facilitar manejo</li>
+                                <li>Aplique graxa ou óleo queimado nos pés dos suportes (barreira contra formigas)</li>
+                                <li>Posicione a entrada das caixas virada para leste ou nordeste</li>
+                                <li>Mantenha distância mínima de 2 metros entre caixas</li>
+                                <li>Instale proteção superior (telha ou cobertura) contra chuva</li>
+                                <li>Verifique o nivelamento das caixas para evitar acúmulo de água</li>
+                            </ol>
+                            <h5><b>Materiais Necessários:</b></h5>
+                            <ul class="green-list">
+                                <li>Cavaletes ou suportes de metal/madeira</li>
+                                <li>Graxa ou óleo queimado (barreira anti-formiga)</li>
+                                <li>Telhas ou chapas para cobertura</li>
+                                <li>Nível de bolha</li>
+                                <li>Parafusos e braçadeiras de fixação</li>
+                                <li>Tela protetora contra pássaros (opcional)</li>
+                                <li>Placas de identificação para cada colônia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer-placeholder"></div>
+        <script>
+            fetch('../footer/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+
+    </main>
+    <script src="../interactive-bubble.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
