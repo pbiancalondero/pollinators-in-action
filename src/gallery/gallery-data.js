@@ -15,6 +15,17 @@ const dadosGaleria = {
       alt: "Instalação das iscas",
       legenda: "Dia 14/11/25: Floreiras instaladas.",
     },
+    {
+      src: "../../assets/img/25-11-18/logo-if.png",
+      alt: "Logo do IF",
+      legenda: "Dia 18/11/25: Pintura e plantação dos arbustos na logo do IF.",
+    },
+    {
+      src: "../../assets/img/25-12-05/floreira-jardim.png",
+      alt: "Floreira do jardim",
+      legenda:
+        "Dia 05/12/25: Floreira de PET instalada no jardim da escadaria.",
+    },
   ],
 
   "dia-25-09-16": [
@@ -235,6 +246,64 @@ const dadosGaleria = {
       src: "../../assets/img/25-11-11/floreiras-manutencao.png",
       alt: "Montagem do jardim",
       legenda: "Manutenção das flores plantadas nas floreiras suspensas.",
+    },
+  ],
+
+  "dia-26-02-24": [
+    {
+      src: "../../assets/img/26-02-24/floreiras-manutencao.png",
+      alt: "Manutenção do jardim",
+      legenda:
+        "Manutenção das flores plantadas nas floreiras e plantação de suculentas.",
+    },
+
+    {
+      src: "../../assets/img/26-02-24/floreiras-manutencao-2.png",
+      alt: "Manutenção do jardim",
+      legenda: "Manutenção das flores e suculentas plantadas nas floreiras.",
+    },
+
+    {
+      src: "../../assets/img/26-02-24/floreiras-manutencao-3.png",
+      alt: "Manutenção do jardim",
+      legenda: "Manutenção das flores plantadas nas floreiras suspensas.",
+    },
+  ],
+
+  "dia-26-03-03": [
+    {
+      src: "../../assets/img/26-03-03/floreiras-manutencao.png",
+      alt: "Manutenção do jardim",
+      legenda: "Manutenção das plantas.",
+    },
+    {
+      src: "../../assets/img/26-03-03/floreiras-manutencao-2.png",
+      alt: "Manutenção do jardim",
+      legenda: "Manutenção das plantas.",
+    },
+  ],
+
+  "dia-26-03-10": [
+    {
+      src: "../../assets/img/26-03-10/colmeia-1.png",
+      alt: "Montagem da primeira colmeia (caixa Inpa)",
+      legenda: "Implantação da caixa Inpa: retirada da colmeia da isca.",
+    },
+    {
+      src: "../../assets/img/26-03-10/colmeia-2.png",
+      alt: "Montagem da primeira colmeia (caixa Inpa)",
+      legenda: "Implantação da caixa Inpa: retirada da colmeia da isca.",
+    },
+    {
+      src: "../../assets/img/26-03-10/colmeia-3.png",
+      alt: "Montagem da primeira colmeia (caixa Inpa)",
+      legenda: "Implantação da caixa Inpa: inserção da colmeia na caixa.",
+    },
+    {
+      src: "../../assets/img/26-03-10/colmeia-4.png",
+      alt: "Montagem da primeira colmeia (caixa Inpa)",
+      legenda:
+        "Implantação da caixa Inpa: vedação da colmeia na caixa. | Última imagem: isca com colmeia forte e segura.",
     },
   ],
 };
