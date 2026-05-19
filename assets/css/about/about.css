@@ -165,6 +165,20 @@ h3 {
     letter-spacing: 0.5px;
 }
 
+h3:hover {
+    color: #4CAF50;
+}
+
+summary > * {
+  display: inline;
+}
+
+summary::marker {
+  content: "🐝 ";
+  color: #ff4500;
+  font-size: 1.2em;
+}
+
 .tutorial-content ul {
     padding-left: 20px;
     margin-bottom: 20px;
