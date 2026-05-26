@@ -161,3 +161,7 @@ h3 {
     left: 0;
     top: 8px;
 }
+
+.stylized-list li > span {
+    text-align: justify;
+}
