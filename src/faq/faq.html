@@ -172,7 +172,24 @@
                 <h3>Não encontrou sua resposta?</h3>
                 <p>Entre em contato conosco! Nossa equipe terá prazer em responder suas dúvidas sobre o projeto e
                     abelhas nativas.</p>
-                <a href="LINK_FORMULARIO" target="_blank" class="btn-dark">Enviar Pergunta</a>
+                <button id="btn-mostrar-form" class="btn-dark">Enviar Pergunta</button>
+
+                <!-- Precisa mudar o email e ativar o formulário -->
+                <form id="form-duvida" action="https://formsubmit.co/toazzamarjory12@gmail.com" method="POST"
+                    class="hidden-form">
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Nova Dúvida do FAQ - Polinizadores em Ação">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/faq.html">
+
+                    <input type="text" name="Nome" placeholder="Seu Nome" required class="faq-input">
+                    <input type="email" name="Email" placeholder="Seu E-mail (para podermos responder)" required
+                        class="faq-input">
+                    <textarea name="Duvida" rows="4" placeholder="Escreva sua dúvida aqui..." required
+                        class="faq-textarea"></textarea>
+
+                    <button type="submit" class="btn-dark w-100">Enviar Pergunta</button>
+                </form>
             </div>
         </section>
 
