@@ -160,3 +160,51 @@ img {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+.hidden-form {
+    display: none;
+    margin-top: 25px;
+    text-align: left;
+    animation: fadeInDown 0.4s ease;
+}
+
+.hidden-form.show {
+    display: block;
+}
+
+.faq-input, .faq-textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.faq-input:focus, .faq-textarea:focus {
+    outline: none;
+    border: 2px solid #212121; 
+    padding: 13px; 
+}
+
+.faq-textarea {
+    resize: vertical;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+@keyframes fadeInDown {
+    from { 
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
