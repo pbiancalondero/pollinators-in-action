@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.form-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.form-header-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-top: 12px solid #F5B700; /* Cor amarela do projeto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.form-subtitle {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Cards */
+.form-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    transition: box-shadow 0.3s ease;
+}
+
+.form-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #212121;
+}
+
+/* Inputs */
+.form-input, .form-textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 40px;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #F5B700;
+}
+
+/* Checkbox */
+.checkbox-group {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.check-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #444;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    margin-left: -15px;
+}
+
+.check-container:hover {
+    background-color: #fff9e6; 
+}
+
+.check-container input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #F5B700; 
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+/* Botão de Enviar idêntico ao da página de Tutoriais */
+.btn-submit {
+    padding: 12px 30px;
+    border: none;
+    background: #F5B700;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #d9a300,
+}
+
+.btn-clear {
+    background: none;
+    border: none;
+    color: #777;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-family: inherit;
+    transition: color 0.3s;
+}
+
+.btn-clear:hover {
+    color: #212121;
+}
+
+@media (max-width: 768px) {
+    .form-header-card, .form-card {
+        padding: 25px 20px;
+    }
+
+    .form-title {
+        font-size: 2rem;
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+}
