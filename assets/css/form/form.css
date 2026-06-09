@@ -13,7 +13,7 @@ body {
 
 .main-content {
     flex: 1;
-    padding: 40px 20px;
+   padding: 40px 0px 0px 0px;
 }
 
 .form-wrapper {
@@ -42,7 +42,7 @@ body {
 .form-subtitle {
     font-size: 18px;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 /* Cards */
@@ -169,7 +169,7 @@ body {
     }
 
     .form-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .form-label {
