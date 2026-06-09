@@ -30,13 +30,13 @@
 
         function ajustarNavbar() {
             let path = window.location.pathname;
-            let isHome = path.includes("/home/index.html") || path.endsWith("/home/");
+            let isHome = path.includes("/home/home.html") || path.endsWith("/home/");
 
             let navLinks = document.querySelector(".navbar-nav");
 
             if (!isHome) {
                 let homeLink = navLinks.querySelector("a[href='#home']");
-                if (homeLink) homeLink.setAttribute("href", "/src/home/index.html");
+                if (homeLink) homeLink.setAttribute("href", "/src/home/home.html");
 
                 let linkLink = navLinks.querySelector("a[href='#link']");
                 if (linkLink) linkLink.setAttribute("href", "/src/link/link.html");
@@ -87,7 +87,7 @@
 
             <div class="tutorial" style="flex-direction: row-reverse;">
                 <div class="tutorial-img">
-                    <img src="../../assets/img/about/img.png" alt="Jardim de flores">
+                    <img src="../../assets/img/about/img.jpg" alt="Jardim de flores">
                 </div>
                 <div class="tutorial-content">
                     <div class="tutorial-header">
