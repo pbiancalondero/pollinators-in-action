@@ -26,16 +26,21 @@ const dadosGaleria = {
       legenda:
         "Dia 05/12/25: Floreira de PET instalada no jardim da escadaria.",
     },
+    {
+      src: "../../assets/img/26-06-09/suporte-aluminio-2.png",
+      alt: "Suportes de alumínio",
+      legenda: "Suportes de alumínio para a caixa Inpa.",
+    },
   ],
 
   "dia-25-09-16": [
     {
-      src: "../../assets/img/25-09-16/pets-recorte-1.JPG",
+      src: "../../assets/img/25-09-16/pets-recorte-2.JPG",
       alt: "Montagem do jardim",
       legenda: "Recorte das garrafas PET para montagem do jardim vertical.",
     },
     {
-      src: "../../assets/img/25-09-16/pets-recorte-2.JPG",
+      src: "../../assets/img/25-09-16/pets-recorte-1.JPG",
       alt: "Montagem do jardim",
       legenda: "Recorte das garrafas PET para montagem do jardim vertical.",
     },
@@ -304,6 +309,20 @@ const dadosGaleria = {
       alt: "Montagem da primeira colmeia (caixa Inpa)",
       legenda:
         "Implantação da caixa Inpa: vedação da colmeia na caixa. | Última imagem: isca com colmeia forte e segura.",
+    },
+  ],
+
+  "dia-26-06-09": [
+    {
+      src: "../../assets/img/26-06-09/palanque-pintura.png",
+      alt: "Palanques de suporte para a caixa Inpa",
+      legenda:
+        "Instalação dos palanques de suporte para a caixa Inpa do meliponário e pintura de verniz para proteção.",
+    },
+    {
+      src: "../../assets/img/26-06-09/suporte-aluminio.png",
+      alt: "Suportes de alumínio",
+      legenda: "Instalação dos suportes de alumínio para a caixa Inpa.",
     },
   ],
 };
