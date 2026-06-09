@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const triggers = document.querySelectorAll('.faq-trigger');
 
+    const btnMostrarForm = document.getElementById('btn-mostrar-form');
+    const formDuvida = document.getElementById('form-duvida');
+
     triggers.forEach(trigger => {
         trigger.addEventListener('click', () => {
             const currentItem = trigger.parentElement;
@@ -15,4 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
             currentItem.classList.toggle('active');
         });
     });
+
+    if (btnMostrarForm && formDuvida) {
+        btnMostrarForm.addEventListener('click', () => {
+            formDuvida.classList.add('show');
+            btnMostrarForm.style.display = 'none';
+        });
+    }
 });

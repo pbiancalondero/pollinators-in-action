@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/common/header.css">
     <link rel="stylesheet" href="../../assets/css/common/footer.css">
-    <!-- <link rel="stylesheet" href="../../assets/css/common/style.css"> -->
+    <link rel="stylesheet" href="../../assets/css/common/style.css">
     <link rel="stylesheet" href="../../assets/css/faq/faq.css">
 </head>
 
@@ -45,7 +45,8 @@
         <section class="page-header container">
             <h2 class="faq-section-title">Perguntas Frequentes</h2>
             <div class="div-line"></div>
-            <p class="faq-section-subtitle">Tire suas dúvidas sobre abelhas nativas, meliponicultura e preservação de
+            <p class="faq-section-subtitle" style="font-size: 18px;">Tire suas dúvidas sobre abelhas nativas,
+                meliponicultura e preservação de
                 polinizadores.</p>
 
             <section class="faq-container container">
@@ -58,7 +59,8 @@
                         </button>
                         <div class="faq-content">
                             <div class="faq-text">
-                                <p>Não! As abelhas sem ferrão (meliponíneos) não possuem ferrão funcional, por isso não
+                                <p style="font-size: 18px;">Não! As abelhas sem ferrão (meliponíneos) não possuem ferrão
+                                    funcional, por isso não
                                     picam.
                                     Elas podem morder em caso de defesa da colônia, mas essa mordida é inofensiva para
                                     humanos.
@@ -74,7 +76,8 @@
                         </button>
                         <div class="faq-content">
                             <div class="faq-text">
-                                <p>Não. Por não possuírem ferrão funcional, elas são totalmente seguras para conviver
+                                <p style="font-size: 18px;">Não. Por não possuírem ferrão funcional, elas são totalmente
+                                    seguras para conviver
                                     com crianças, cães e gatos. Algumas espécies podem dar "beliscões" inofensivos ou se
                                     enroscar no cabelo se sentirem que a colônia está ameaçada, mas não causam dor ou
                                     alergias como a abelha comum.
@@ -90,7 +93,8 @@
                         </button>
                         <div class="faq-content">
                             <div class="faq-text">
-                                <p>Observe a entrada! Se houver um "canudinho" de cera na entrada e as abelhas forem
+                                <p style="font-size: 18px;">Observe a entrada! Se houver um "canudinho" de cera na
+                                    entrada e as abelhas forem
                                     pequenas e de voo manso, provavelmente são abelhas nativas (como a Jataí). Se for um
                                     grande favo exposto com abelhas maiores, listradas e agitadas, são abelhas com
                                     ferrão (Apis). Na dúvida, não mexa e entre em contato com órgãos
@@ -108,7 +112,8 @@
                         </button>
                         <div class="faq-content">
                             <div class="faq-text">
-                                <p>Não. As abelhas nativas não roem alvenaria, tijolos ou madeira maciça para criar
+                                <p style="font-size: 18px;">Não. As abelhas nativas não roem alvenaria, tijolos ou
+                                    madeira maciça para criar
                                     ninhos. Elas apenas ocupam espaços ocos que já existem, como
                                     frestas em muros, caixas de luz vazias ou troncos velhos.
                                 </p>
@@ -123,7 +128,8 @@
                         </button>
                         <div class="faq-content">
                             <div class="faq-text">
-                                <p>Você pode ajudar plantando flores nativas, evitando o uso de pesticidas no jardim e
+                                <p style="font-size: 18px;">Você pode ajudar plantando flores nativas, evitando o uso de
+                                    pesticidas no jardim e
                                     deixando uma pequena fonte de água rasa com pedras para elas beberem sem se
                                     afogarem.
                                 </p>
@@ -138,7 +144,8 @@
                         </button>
                         <div class="faq-content">
                             <div class="faq-text">
-                                <p>Você pode participar acompanhando nossos tutoriais de manejo, criando um espaço
+                                <p style="font-size: 18px;">Você pode participar acompanhando nossos tutoriais de
+                                    manejo, criando um espaço
                                     amigável para polinizadores na sua casa (plantando flores nativas), ou
                                     informando aos orgãos ambientais caso encontre enxames nativos em situação de risco
                                     na cidade.
@@ -154,7 +161,8 @@
                         </button>
                         <div class="faq-content">
                             <div class="faq-text">
-                                <p>Diferente da abelha comum europeia, as abelhas nativas diminuem muito o seu ritmo no
+                                <p style="font-size: 18px;">Diferente da abelha comum europeia, as abelhas nativas
+                                    diminuem muito o seu ritmo no
                                     inverno. Elas fecham ou reduzem a entrada do ninho, param de voar nos dias muito
                                     frios e sobrevivem se alimentando do mel e do pólen que estocaram na primavera e no
                                     verão.
@@ -170,9 +178,27 @@
         <section class="contact-banner container">
             <div class="banner-yellow-card">
                 <h3>Não encontrou sua resposta?</h3>
-                <p>Entre em contato conosco! Nossa equipe terá prazer em responder suas dúvidas sobre o projeto e
+                <p style="font-size: 18px;">Entre em contato conosco! Nossa equipe terá prazer em responder suas dúvidas
+                    sobre o projeto e
                     abelhas nativas.</p>
-                <a href="LINK_FORMULARIO" target="_blank" class="btn-dark">Enviar Pergunta</a>
+                <button id="btn-mostrar-form" class="btn-dark">Enviar Pergunta</button>
+
+                <!-- Precisa mudar o email e ativar o formulário -->
+                <form id="form-duvida" action="https://formsubmit.co/polinizadoresemacaoifsul@gmail.com" method="POST"
+                    class="hidden-form">
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Nova Dúvida do FAQ - Polinizadores em Ação">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/faq/faq.html">
+
+                    <input type="text" name="Nome" placeholder="Seu Nome" required class="faq-input">
+                    <input type="email" name="Email" placeholder="Seu E-mail (para podermos responder)" required
+                        class="faq-input">
+                    <textarea name="Duvida" rows="4" placeholder="Escreva sua dúvida aqui..." required
+                        class="faq-textarea"></textarea>
+
+                    <button type="submit" class="btn-dark w-100">Enviar Pergunta</button>
+                </form>
             </div>
         </section>
 
