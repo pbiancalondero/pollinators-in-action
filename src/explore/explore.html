@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/img/bee-icon-2.ico" type="image/x-icon" />
+    <title>Explorar Conteúdos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/common/header.css">
+    <link rel="stylesheet" href="../../assets/css/explore/explore.css">
+    <link rel="stylesheet" href="../../assets/css/common/footer.css">
+    <link rel="stylesheet" href="../../assets/css/common/style.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                ajustarNavbar();
+            });
+
+        function ajustarNavbar() {
+            let path = window.location.pathname;
+            let isHome = path.includes("/home/home.html") || path.endsWith("/home/");
+
+            let navLinks = document.querySelector(".navbar-nav");
+
+            if (!isHome) {
+                let homeLink = navLinks.querySelector("a[href='#home']");
+                if (homeLink) homeLink.setAttribute("href", "/src/home/home.html");
+            }
+        }
+    </script>
+    <main>
+        <section id="explore" class="py-5 explore-section">
+            <div class="container ex">
+                <h2 class="section-title">Explorar Conteúdos</h2>
+                <div class="div-line"></div>
+                <div class="row">
+                    <div class="text-center">
+                        <p class="mb-4" style="font-size: 18px;">Explore nossa biblioteca de recursos educativos
+                            sobre abelhas nativas, polinização e conservação ambiental.</p>
+                    </div>
+                    <div class="cards">
+                        <div class="explore-card">
+                            <div class="explore-top-yellow">
+                                <div class="icon-circle">
+                                    <img src="../../assets/img/explore/filetype-pdf.svg">
+                                </div>
+                                <h2>Conhecendo as Abelhas</h2>
+                            </div>
+                            <div class="explore-content">
+                                <p>Você sabia que a nossa sobrevivência no planeta depende das abelhas?
+                                </p>
+                                <a href="https://www.brasilcidadao.org.br/wp-content/uploads/FBC-Cartilha-Conhecendo_as_abelhas.pdf"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <button>Acessar Conteúdo</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="explore-card">
+                            <div class="explore-top-green">
+                                <div class="icon-circle">
+                                    <img src="/assets/img/explore/file-earmark-pdf.svg" alt="Ícone flor">
+                                </div>
+                                <h2>Manual de Doenças</h2>
+                            </div>
+                            <div class="explore-content">
+                                <p>Boas práticas aplicadas à prevenção, controle e
+                                    erradicação de doenças das abelhas direcionado
+                                    ao Serviço Veterinário Oficial.
+                                </p>
+                                <a href="https://www.gov.br/agricultura/pt-br/assuntos/sanidade-animal-e-vegetal/saude-animal/programas-de-saude-animal/ManualdeDoencasdasAbelhaswebcomprimido.pdf"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <button>Acessar Conteúdo</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="explore-card">
+                            <div class="explore-top-yellow">
+                                <div class="icon-circle">
+                                    <img src="../../assets/img/explore/file-earmark-richtext.svg" alt="Ícone flor">
+                                </div>
+                                <h2>Instalação do Apiário</h2>
+                            </div>
+                            <div class="explore-content">
+                                <p>
+                                    Apiário é um conjunto de colmeias (caixas com abelhas) devidamente instaladas e
+                                    manejadas racionalmente.
+                                </p>
+                                <a href="https://wp.ufpel.edu.br/apicultura/files/2010/05/Manejo-de-Abelhas.pdf"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <button>Acessar Conteúdo</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="explore-card">
+                            <div class="explore-top-yellow">
+                                <div class="icon-circle">
+                                    <img src="../../../assets/img/explore/file-earmark.svg" alt="Ícone flor">
+                                </div>
+                                <h2>Guia sobre Acidentes</h2>
+                            </div>
+                            <div class="explore-content">
+                                <p>
+                                    No Brasil, a maior parte deles, 40%, ocorre no verão (entre dezembro e
+                                    março), período em que algumas espécies se reproduzem.
+                                </p>
+                                <a href="https://repositorio-api.butantan.gov.br/server/api/core/bitstreams/9b671dde-11db-443d-86e7-f60cdc4c509d/content"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <button>Acessar Conteúdo</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="explore-card">
+                            <div class="explore-top-green">
+                                <div class="icon-circle">
+                                    <img src="../../../assets/img/explore/file-earmark-ruled.svg" alt="Ícone flor">
+                                </div>
+                                <h2>Dia Mundial das Abelhas</h2>
+                            </div>
+                            <div class="explore-content">
+                                <p>Conheça a importância desse animal para a polinização.
+                                </p>
+                                <a href="https://crmvsp.gov.br/dia-mundial-das-abelhas-conheca-a-importancia-desse-animal-para-a-polinizacao/"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <button>Acessar Conteúdo</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="explore-card">
+                            <div class="explore-top-yellow">
+                                <div class="icon-circle">
+                                    <img src="../../../assets/img/explore/file-earmark-play.svg" alt="Ícone flor">
+                                </div>
+                                <h2>Tranferência de Enxame</h2>
+                            </div>
+                            <div class="explore-content">
+                                <p>
+                                    Como Transferir um enxame de abelhas Jataí - A rainha estava perto do mel!
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=57Pk42PcFIw" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button>Acessar Conteúdo</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <div id="footer-placeholder"></div>
+        <script>
+            fetch('../footer/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+
+    </main>
+    <script src="../interactive-bubble.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

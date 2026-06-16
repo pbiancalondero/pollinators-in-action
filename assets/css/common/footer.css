@@ -132,9 +132,8 @@
     gap: 1rem;
   }
   
-  .footer-content {
-    gap: 1rem; 
-  }
+
+
 .support-logos{
   width: 100%;
 
@@ -175,7 +174,7 @@
   line-height: 1.6;
 }
 
-.contact-text .section-title {
+.contact-text .footer-title {
   color: white;
   font-size: 1.5rem;
 }

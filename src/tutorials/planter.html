@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/img/bee-icon-2.ico" type="image/x-icon" />
+    <title>Tutorial de Meliponário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/common/header.css">
+    <link rel="stylesheet" href="../../assets/css/tutorials/meliponary.css">
+    <link rel="stylesheet" href="../../assets/css/common/footer.css">
+    <link rel="stylesheet" href="../../assets/css/common/style.css">
+</head>
+
+
+<body>
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                ajustarNavbar();
+            });
+
+
+        function ajustarNavbar() {
+            let path = window.location.pathname;
+            let isHome = path.includes("/home/home.html") || path.endsWith("/home/");
+
+
+            let navLinks = document.querySelector(".navbar-nav");
+
+
+            if (!isHome) {
+                let homeLink = navLinks.querySelector("a[href='#home']");
+                if (homeLink) homeLink.setAttribute("href", "/src/home/home.html");
+            }
+        }
+    </script>
+    <main>
+        <section id="tutorial" class="py-5 tutorial-section">
+            <div class="container ex">
+                <h2 class="section-title">Tutorial do Jardim de Flores</h2>
+                <div class="div-line"></div>
+                <div class="row">
+                    <div class="text-center">
+                        <p class="mb-4" style="font-size: 18px;">Aprenda com nossos guias práticos e comece sua jornada
+                            no plantio de flores, criando um habitat propício para polinizadores e adquirindo
+                            práticas sustentáveis para si e para o meio ambiente.</p>
+                    </div>
+
+
+                    <div class="tutorial">
+                        <div class="tutorial-img">
+                            <img src="../../../assets/img/tutorials/planter/1.png">
+                        </div>
+                        <div class="tutorial-content">
+                            <div class="tutorial-header">
+                                <div class="icon-circle">
+                                    <img src="../../../assets/img/tutorials/planter/flowers.png" alt="Ícone flor">
+                                </div>
+                                <span class="tag">Jardim Vertical</span>
+                            </div>
+                            <h5><b>Passos:</b></h5>
+                            <ol class="stylized-list" style="font-size: 18px;">
+                                <li style="font-size: 18px;"><span><b>Preparação das PETS:</b> coloque a garrafa em
+                                        horizontal e recorte em
+                                        formato de retângulo,
+                                        pegue o soldador e faça vários furos no paralelo do retângulo para escoar a
+                                        água, também
+                                        perfure o fundo e o bico para transpassar o arame.</span></li>
+
+                                <li style="font-size: 18px;"><span><b>Pintura das PETS:</b> Para a pintura, faça
+                                        pequenos suportes para conseguir
+                                        largar
+                                        as garrafas após a pintura, pois elas precisam secar. Você vai pegar o spray e
+                                        pintar todas as garrafas.</span></li>
+
+                                <li style="font-size: 18px;"><span><strong>Fixação das PETS:</strong> Com alicates de
+                                        corte, corte o arame no
+                                        tamanho um pouco maior do que a garrafa. Agora,
+                                        transpasse os arames por dentro dos furos do bico e do fundo para prendermos na
+                                        escada. Na escada você vai
+                                        precisar enrolar os arames, garantindo que fiquem bem presos e equilibrados para
+                                        segurar as garrafas.</span></li>
+
+                                <li style="font-size: 18px;"><span><strong>Plantação das flores:</strong> adiciona a
+                                        terra, deixa bem soltinha, e
+                                        aí coloca a muda de flor no centro,
+                                        pressionando levemente para fixar bem, depois completa com mais terra e dê um
+                                        pouco de água.</span></li>
+
+                                <li style="font-size: 18px;"><span><strong>Manutenção das flores:</strong> Cada espécie
+                                        de flor tem um jeito de
+                                        ser cuidada. Depois de um tempo, quando estiver faltando terra,
+                                        completa com mais um pouco, e dê água de acordo com o necessário para ela sempre
+                                        estar em um ambiente saudável florescer.</span></li>
+                            </ol>
+                            <h5><b>Materiais Necessários:</b></h5>
+                            <ul class="green-list" style="font-size: 18px;">
+                                <li style="font-size: 18px;">Materiais recicláveis, como garrafa pet;</li>
+                                <li style="font-size: 18px;">Tinta para pintar as garrafas pets;</li>
+                                <li style="font-size: 18px;">Um soldador ou algo para perfurar as garrafas pets;</li>
+                                <li style="font-size: 18px;">Alicate de corte e de bico para cortar os arames e fixar as
+                                    garrafas;</li>
+                                <li style="font-size: 18px;">Suporte, prendedores ou arame para fixar as garrafas no
+                                    local desejado;</li>
+                                <li style="font-size: 18px;">Terra, adubo, mudas de flores e água.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tutorial">
+                        <div class="tutorial-content">
+                            <div class="tutorial-header">
+                                <div class="icon-circle">
+                                    <img src="../../../assets/img/tutorials/planter/flowers.png" alt="Ícone">
+                                </div>
+                                <span class="tag">Floreiras Horizontais</span>
+                            </div>
+                            <h5><b>Passos:</b></h5>
+                            <ol class="stylized-list" style="font-size: 18px;">
+                                <li style="font-size: 18px;"><span>Para o plantio nas <strong>floreiras
+                                            horizontais</strong>, prepare bem o solo,
+                                        adube ele, deixe ele soltinho, faça um buraco, plante as flores e dê água de
+                                        acordo com a espécie.</span></li>
+                                <li style="font-size: 18px;"><span>Para a fabricação da <strong>churrasqueira</strong>,
+                                        coloque os blocos de
+                                        concreto no local escolhido, preencha todos
+                                        os blocos com terra até em cima, prepare bem o solo, adube ele, deixe ele
+                                        soltinho, faça um buraco,
+                                        plante as flores e dê água de acordo com a espécie.</span></li>
+                                <li style="font-size: 18px;"><span>Para o <strong>plantio no pneu</strong>, você vai
+                                        precisar escolher um lugar
+                                        adequado, colocar o seu pneu já pintado,
+                                        preencher ele de terra até em cima, prepare bem o solo, adube ele, deixe ele
+                                        soltinho,
+                                        faça um buraco, plante as flores e dê água de acordo com a espécie.</span></li>
+                            </ol>
+                            <h5><b>Materiais Necessários:</b></h5>
+                            <ul class="green-list" style="font-size: 18px;">
+                                <li>Blocos de concreto;</li>
+                                <li>Pneus;</li>
+                                <li>Terra, adubo, mudas de flores e água.</li>
+                            </ul>
+                        </div>
+                        <div class="tutorial-img">
+                            <img src="../../../assets/img/tutorials/planter/2.png">
+                        </div>
+                    </div>
+                    <div class="tutorial">
+                        <div class="tutorial-img">
+                            <img src="../../../assets/img/tutorials/planter/3.png">
+                        </div>
+                        <div class="tutorial-content">
+                            <div class="tutorial-header">
+                                <div class="icon-circle">
+                                    <img src="../../../assets/img/tutorials/planter/flowers.png" alt="Ícone flor">
+                                </div>
+                                <span class="tag">Manutenção e Mudas dos Jardins</span>
+                            </div>
+                            <h5><b>Tipos:</b></h5>
+                            <ol class="stylized-list" style="font-size: 18px;">
+                                <li style="font-size: 18px;"><span>
+                                        <strong>Cravina:</strong> gosta de boa iluminação e solo fértil e bem drenado.
+                                        Regar de 2 a 3 vezes por semana, utilizando cerca de 200ml de água,
+                                        mantendo o solo levemente úmido.
+                                    </span></li>
+
+                                <li style="font-size: 18px;"><span>
+                                        <strong>Petúnia:</strong> prefere sol pleno e solo leve.
+                                        Regar diariamente em dias quentes ou a cada 2 dias em clima ameno,
+                                        utilizando aproximadamente 250ml de água.
+                                    </span></li>
+
+                                <li style="font-size: 18px;"><span>
+                                        <strong>Cravo-defunto:</strong> necessita de bastante sol e solo drenado.
+                                        Regar de 2 a 3 vezes por semana com cerca de 200ml de água,
+                                        evitando encharcamento.
+                                    </span></li>
+
+                                <li style="font-size: 18px;"><span>
+                                        <strong>Onze-horas:</strong> gostam de sol pleno e solo bem drenado.
+                                        Florescem às 11h da manhã. Regar de 2 a 3 vezes por semana, utilizando cerca de 150ml de água,
+                                        permitindo que o solo seque entre as regas.
+                                    </span></li>
+
+                                <li style="font-size: 18px;"><span>
+                                        <strong>Suculentas:</strong> gostam de luz direta e pouca umidade.
+                                        Regar a cada 10 ou 15 dias com aproximadamente 100ml de água,
+                                        apenas quando o solo estiver completamente seco.
+                                    </span></li>
+
+                                <li style="font-size: 18px;"><span>
+                                        <strong>Beijinhos:</strong> preferem meia-sombra e solo rico em matéria
+                                        orgânica.
+                                        Regar diariamente ou sempre que o solo começar a secar,
+                                        utilizando cerca de 250ml de água.
+                                    </span></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="footer-placeholder"></div>
+        <script>
+            fetch('../footer/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+
+
+    </main>
+    <script src="../interactive-bubble.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/img/bee-icon-2.ico" type="image/x-icon" />
+    <title>Polinizadores em Ação - Avaliação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/common/header.css">
+    <link rel="stylesheet" href="../../assets/css/common/footer.css">
+    <link rel="stylesheet" href="../../assets/css/common/style.css">
+    <link rel="stylesheet" href="../../assets/css/form/form.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <script>
+        fetch('../header/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                ajustarNavbar();
+            });
+
+        function ajustarNavbar() {
+            let path = window.location.pathname;
+            let isHome = path.includes("/home/home.html") || path.endsWith("/home/");
+
+            let navLinks = document.querySelector(".navbar-nav");
+
+            if (!isHome) {
+                let homeLink = navLinks.querySelector("a[href='#home']");
+                if (homeLink) homeLink.setAttribute("href", "/src/home/home.html");
+            }
+        }
+    </script>
+
+    <main class="main-content">
+        <section class="form-wrapper">
+
+            <div class="form-header-card">
+                <h2 class="form-title">Avaliação do Projeto</h2>
+                <p class="form-subtitle">Sua opinião é fundamental para avaliarmos o impacto das nossas ações sobre a
+                    preservação de abelhas nativas no IFSul Câmpus Passo Fundo e região.</p>
+            </div>
+
+            <form action="https://formsubmit.co/polinizadoresemacaoifsul@gmail.com" method="POST" class="google-form-style">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" id="Nova Avaliação do Projeto - Polinizadores em Ação">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/home/home.html">
+
+                <div class="form-card">
+                    <label class="form-label">Você faz parte de qual grupo?</label>
+                    <div class="checkbox-group">
+                        <label class="check-container">
+                            <input type="radio" name="Grupo" value="Discente">Discente</label>
+                        <label class="check-container">
+                            <input type="radio" name="Grupo" value="Docente">Docente</label>
+                        <label class="check-container">
+                            <input type="radio" name="Grupo" value="NUGAI">NUGAI</label>
+                        <label class="check-container" style="display: flex; gap: 10px; align-items: center;">
+                            <input type="radio" name="Grupo" value="Outro"> Outro:
+                            <input type="text" name="Grupo_Outro" class="form-input"
+                                style="padding: 2px 0; margin: 0; width: 100%;">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <label class="form-label">Antes do projeto, como você avaliava o seu nível de conhecimento sobre a
+                        importância dos polinizadores?
+                        <div class="checkbox-group">
+                            <label class="check-container"><input type="radio" name="Conhecimento_Antes"
+                                    value="Nenhum conhecimento" required>Nenhum conhecimento</label>
+                            <label class="check-container"><input type="radio" name="Conhecimento_Antes"
+                                    value="Pouco conhecimento">Pouco conhecimento</label>
+                            <label class="check-container"><input type="radio" name="Conhecimento_Antes"
+                                    value="Conhecimento razoável">Conhecimento razoável</label>
+                            <label class="check-container"><input type="radio" name="Conhecimento_Antes"
+                                    value="Muito conhecimento">Muito conhecimento</label>
+                        </div>
+                </div>
+
+                <div class="form-card">
+                    <label class="form-label">Após o contato com o projeto, como você avalia o seu nível de conhecimento
+                        sobre polinizadores?
+                        <div class="checkbox-group">
+                            <label class="check-container"><input type="radio" name="Conhecimento_Apos"
+                                    value="Nenhum conhecimento" required>Nenhum conhecimento</label>
+                            <label class="check-container"><input type="radio" name="Conhecimento_Apos"
+                                    value="Pouco conhecimento">Pouco conhecimento</label>
+                            <label class="check-container"><input type="radio" name="Conhecimento_Apos"
+                                    value="Conhecimento razoável">Conhecimento razoável</label>
+                            <label class="check-container"><input type="radio" name="Conhecimento_Apos"
+                                    value="Muito conhecimento">Muito conhecimento</label>
+                        </div>
+                </div>
+
+                <div class="form-card">
+                    <label class="form-label">Você considera que o projeto ajudou a compreender a relação entre
+                        polinizadores, biodiversidade e segurança alimentar?
+                        <div class="checkbox-group">
+                            <label class="check-container"><input type="radio" name="Compreensao_Relacao" value="Sim"
+                                    required>Sim</label>
+                            <label class="check-container"><input type="radio" name="Compreensao_Relacao"
+                                    value="Parcialmente">Parcialmente</label>
+                            <label class="check-container"><input type="radio" name="Compreensao_Relacao"
+                                    value="Não">Não</label>
+                        </div>
+                </div>
+
+                <div class="form-card">
+                    <label class="form-label">O jardim vertical e a colmeia de abelhas sem ferrão contribuíram para
+                        tornar o Câmpus um espaço mais verde e sustentável?
+                        <div class="checkbox-group">
+                            <label class="check-container"><input type="radio" name="Contribuicao_Campus"
+                                    value="Sim, muito" required>Sim, muito</label>
+                            <label class="check-container"><input type="radio" name="Contribuicao_Campus"
+                                    value="Sim, mas de forma limitada">Sim, mas de forma limitada</label>
+                            <label class="check-container"><input type="radio" name="Contribuicao_Campus"
+                                    value="Não percebi diferença">Não percebi diferença</label>
+                        </div>
+                </div>
+
+                <div class="form-card">
+                    <label class="form-label">Você visitou ou interagiu com o jardim ou a colmeia?
+                        <div class="checkbox-group">
+                            <label class="check-container"><input type="radio" name="Interacao"
+                                    value="Sim, frequentemente" required>Sim, frequentemente</label>
+                            <label class="check-container"><input type="radio" name="Interacao"
+                                    value="Algumas vezes">Algumas vezes</label>
+                            <label class="check-container"><input type="radio" name="Interacao" value="Não">Não</label>
+                        </div>
+                </div>
+
+                <div class="form-card">
+                    <label for="fato_marcante" class="form-label">Qual foi a curiosidade ou informação sobre as abelhas
+                        que mais te surpreendeu?</label>
+                    <input type="text" id="fato_marcante" name="Fato_Marcante" class="form-input"
+                        placeholder="Sua resposta (opcional)">
+                </div>
+
+                <div class="form-card">
+                    <label class="form-label">Em relação ao site, como avalia os conteúdos disponíveis?
+                        <div class="checkbox-group">
+                            <label class="check-container"><input type="radio" name="Avaliacao_Conteudos"
+                                    value="Muito úteis e claros" required>Muito úteis e claros</label>
+                            <label class="check-container"><input type="radio" name="Avaliacao_Conteudos"
+                                    value="Úteis, mas poderiam ser mais didáticos">Úteis, mas poderiam ser mais
+                                didáticos</label>
+                            <label class="check-container"><input type="radio" name="Avaliacao_Conteudos"
+                                    value="Pouco úteis ou confusos">Pouco úteis ou confusos</label>
+                            <label class="check-container"><input type="radio" name="Avaliacao_Conteudos"
+                                    value="Não se aplica (não acessei)">Não se aplica (não acessei)</label>
+                        </div>
+                </div>
+
+                <div class="form-card">
+                    <label class="form-label">Após conhecer o projeto, você se sente mais motivado(a) a adotar práticas
+                        sustentáveis no dia a dia?
+                        <div class="checkbox-group">
+                            <label class="check-container"><input type="radio" name="Motivacao_Sustentavel"
+                                    value="Sim, com certeza" required>Sim, com certeza</label>
+                            <label class="check-container"><input type="radio" name="Motivacao_Sustentavel"
+                                    value="Talvez">Talvez</label>
+                            <label class="check-container"><input type="radio" name="Motivacao_Sustentavel"
+                                    value="Não">Não</label>
+                        </div>
+                </div>
+
+                <div class="form-card">
+                    <label for="outras_acoes" class="form-label">Que outras ações você considera importantes para
+                        ampliar o impacto do projeto?</label>
+                    <textarea id="outras_acoes" name="Sugestoes_Ampliamento" class="form-textarea" rows="4"
+                        placeholder="Sua resposta"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Enviar</button>
+                    <button type="reset" class="btn-clear">Limpar formulário</button>
+                </div>
+            </form>
+
+        </section>
+
+        <div id="footer-placeholder"></div>
+
+        <script>
+            fetch('../footer/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+    </main>
+    <script src=""></script>
+    <script src="../interactive-bubble.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
